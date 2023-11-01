@@ -1,0 +1,127 @@
+<app-layout>
+  <div class="slidesContainer">
+    <div class="mySlides" #slides>
+      <div class="text-box">
+        <h4>برامج تدريبية متخصصة فى إعداد المعلمين</h4>
+        <div class="actions">
+          <button class="primary-white-button" (click)="register()">سجل الان</button>
+          <button class="primary-white-outline-button">عرض المزيد</button>
+        </div>
+      </div>
+      <img src="assets/images/slider/first.svg" alt="">
+    </div>
+  
+    <div class="mySlides" #slides>
+      <div class="text-box">
+        <h4>برامج تدريبية متخصصة فى السياحة و الفنادق</h4>
+        <div class="actions">
+          <button class="primary-white-button" (click)="register()">سجل الان</button>
+          <button class="primary-white-outline-button">عرض المزيد</button>
+        </div>
+      </div>
+      <img src="assets/images/slider/second.svg" alt="">
+    </div>
+  
+    <div class="mySlides" #slides>
+      <div class="text-box">
+        <h4>برامج تدريبية متخصصة فى الخدمات البترولية</h4>
+        <div class="actions">
+          <button class="primary-white-button" (click)="register()">سجل الان</button>
+          <button class="primary-white-outline-button">عرض المزيد</button>
+        </div>
+      </div>
+      <img src="assets/images/slider/third.svg" alt="">
+    </div>
+
+    <div class="mySlides" #slides>
+      <div class="text-box">
+        <h4>برامج تدريبية متخصصة فى اللغة الإنجليزية المتخصصة</h4>
+        <div class="actions">
+          <button class="primary-white-button" (click)="register()">سجل الان</button>
+          <button class="primary-white-outline-button">عرض المزيد</button>
+        </div>
+      </div>
+      <img src="assets/images/slider/fourth.svg" alt="">
+    </div>
+
+    <div class="mySlides" #slides>
+      <div class="text-box">
+        <h4>برامج تدريبية متخصصة فى المساحة و الخرائط</h4>
+        <div class="actions">
+          <button class="primary-white-button" (click)="register()">سجل الان</button>
+          <button class="primary-white-outline-button">عرض المزيد</button>
+        </div>
+      </div>
+      <img src="assets/images/slider/fifth.svg" alt="">
+    </div>
+
+    <div class="mySlides" #slides>
+      <div class="text-box">
+        <h4>برامج تدريبية فى التنمية البشرية</h4>
+        <div class="actions">
+          <button class="primary-white-button" (click)="register()">سجل الان</button>
+          <button class="primary-white-outline-button">عرض المزيد</button>
+        </div>
+      </div>
+      <img src="assets/images/slider/sixth.svg" alt="">
+    </div>
+      
+    <div class="mySlides" #slides>
+      <div class="text-box">
+        <h4>برامج تدريبية متخصصة فى الخدمات الطبية</h4>
+        <div class="actions">
+          <button class="primary-white-button" (click)="register()">سجل الان</button>
+          <button class="primary-white-outline-button">عرض المزيد</button>
+        </div>
+      </div>
+      <img src="assets/images/slider/seventh.svg" alt="">
+    </div>
+  
+    <div class="mySlides" #slides>
+      <div class="text-box">
+        <h4>برامج تدريبية متخصصة فى تكنولوجيا المعلومات</h4>
+        <div class="actions">
+          <button class="primary-white-button" (click)="register()">سجل الان</button>
+          <button class="primary-white-outline-button">عرض المزيد</button>
+        </div>
+      </div>
+      <img src="assets/images/slider/eights.svg" alt="">
+    </div>
+      
+    <div class="mySlides" #slides>
+      <div class="text-box">
+        <h4>برامج تدريبية متخصصة فى الصحافة و الاعلام</h4>
+        <div class="actions">
+          <button class="primary-white-button" (click)="register()">سجل الان</button>
+          <button class="primary-white-outline-button">عرض المزيد</button>
+        </div>
+      </div>
+      <img src="assets/images/slider/ninth.svg" alt="">
+    </div>
+
+    <div class="mySlides" #slides>
+      <div class="text-box">
+        <h4>برامج تدريبية متخصصة فى إدارة الأعمال</h4>
+        <div class="actions">
+          <button class="primary-white-button" (click)="register()">سجل الان</button>
+          <button class="primary-white-outline-button">عرض المزيد</button>
+        </div>
+      </div>
+      <img src="assets/images/slider/tenth.svg" alt="">
+    </div>
+
+    <div class="slides-details">
+      <div class="details">
+        <p-carousel [value]="sliders" [numVisible]="4" [numScroll]="1" [circular]="false" [showIndicators]="false" [responsiveOptions]="responsiveOptions" [contentClass]="'direction: rtl'">
+          <ng-template let-slide let-index="index" pTemplate="item">
+              <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+                  <div class="caption" (click)="currentSlide(slide.id)">
+                      {{slide.caption}}
+                  </div>
+              </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+    </div>
+  </div>
+</app-layout>

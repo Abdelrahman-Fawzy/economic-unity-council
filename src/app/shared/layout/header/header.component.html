@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-xl navbar-light">
+<a class="navbar-brand" href="#">
+  <div class="logo flex flex-col ai-c">
+    <div class="img">
+      <img src="assets/images/main_assets/logo.svg" alt="">
+    </div>
+    <span>مركز التدريب و البحوث و الدراسات</span>
+    <span>Training, research and studies Center</span>
+  </div>
+  <!-- <img src="assets/images/main_assets/logo.svg" alt="logo"> -->
+</a>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse jc-sb" id="navbarSupportedContent">
+  <ul class="navbar-nav gap-20">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="''" [routerLinkActive]="'routerActive'" [routerLinkActiveOptions]="{exact: true}">
+        الصفحة الرئيسية
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">
+        البرامج التدريبية
+        <span class="caret"></span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">
+        بروتوكولات تدريبية
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">
+        خدمات المركز
+        <span class="caret"></span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="'verify-certificate'" [routerLinkActive]="'routerActive'">
+        التحقق من الشهادات
+        <span class="caret"></span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">
+        الاستشارات التدريبية
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">
+        من نحن
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">
+        تواصل معنا
+      </a>
+    </li>
+  </ul>
+</div>
+</nav>

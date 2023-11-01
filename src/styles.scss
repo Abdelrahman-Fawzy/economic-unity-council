@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import './assets/abstracts/main';
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  background: #F1F5F9;
+  text-align: right;
+}
+
+.modal-content {
+  border-radius: 40px !important;
+  .modal-header {
+    align-items: center !important;
+    padding: 24px !important;
+    padding-bottom: 0 !important;
+    border: 0 !important;
+    h4 {
+      color: #386BB4;
+      font-weight: 700;
+      font-size: 24px;
+      text-align: center;
+    }
+    button.btn-close {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+      border: 1px solid $mainGreenColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span { height: 100%; color: $mainGreenColor; }
+    }
+  }
+  .modal-body {
+    padding: 24px 34px;
+  }
+}
+.p-galleria-caption {
+  top: 50%;
+  bottom: unset;
+  transform: translateY(-50%);
+}
+
+.p-galleria-thumbnail-container {
+  position: absolute;
+  bottom: 20px;
+  margin: 0 3em;
+}
+
+.p-carousel-items-container {
+  align-items: center;
+}
