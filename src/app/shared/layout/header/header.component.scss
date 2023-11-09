@@ -16,12 +16,35 @@ nav.navbar {
     }
   }
   ul.navbar-nav {
-    margin-right: 3rem;
+    margin-right: 1rem;
     li.nav-item {
       a.nav-link {
         color: $sharedGreyColor;
         font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        &::after { display: none; }
       }
     }
   }
+}
+
+
+.dropdown-menu li {
+  position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+}
+.dropdown-menu .dropdown-submenu-left {
+  right: 100%;
+  left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+  display: block;
 }

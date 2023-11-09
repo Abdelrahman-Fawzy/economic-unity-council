@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
-import { PhotoService } from '../shared/services/photo.service';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { RegisterationModalComponent } from '../shared/registeration-modal/registeration-modal.component';
 

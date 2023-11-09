@@ -1,0 +1,100 @@
+<app-layout>
+  <div class="courseDetails">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="course-info">
+            <div class="flex ai-c gap-20">
+              <span class="dot"></span>
+              <div class="category">
+                <span>برامج تدريبية متخصصة فى اللغة الإنجليزية المتخصصة</span>
+              </div>
+            </div>
+            <div class="course-name">
+              <h3>{{course?.name}}</h3>
+            </div>
+            <div class="rating">
+              <p-rating [(ngModel)]="value" [readonly]="true" [cancel]="false"></p-rating>
+              <span>4.2</span>
+            </div>
+            <div class="information">
+              <ul class="list-unstyled">
+                <li>
+                  <div class="img">
+                    <img src="assets/images/icons/code.svg" alt="">
+                  </div>
+                  <span>الكود : {{course?.code}}</span>
+                </li>
+                <li>
+                  <div class="img">
+                    <img src="assets/images/icons/calendar.svg" alt="">
+                  </div>
+                  <span>الايام : {{course?.days.length}}</span>
+                </li>
+                <li>
+                  <div class="img">
+                    <img src="assets/images/icons/hours.svg" alt="">
+                  </div>
+                  <span>الساعات : {{course?.duration}}</span>
+                </li>
+                <li>
+                  <div class="img">
+                    <img src="assets/images/icons/price.svg" alt="">
+                  </div>
+                  <span>السعر :{{course?.price}}</span>
+                </li>
+              </ul>
+            </div>
+            <div class="description">
+              <h5 class="title">وصف البرنامج التدريبى</h5>
+              <p>{{course?.description}}</p>
+            </div>
+            <div class="footer">
+              <div class="tools">
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="img">
+                      <img src="assets/images/icons/word.svg" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img">
+                      <img src="assets/images/icons/powerPoint.svg" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="instructor">
+                <div class="info">
+                  <span class="name">{{course?.instructor?.name}}</span>
+                  <span class="jobDesc">{{course?.instructor?.job}}</span>
+                </div>
+                <div class="img">
+                  <img [src]="course?.instructor?.profile" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="registeration">
+              <button class="primary-button" (click)="register()">
+                <span>سجل الان</span>
+                <img src="assets/images/icons/arrow-left.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="video position-relative">
+            <div class="img">
+              <img src="assets/images/course.png" alt="">
+            </div>
+            <button class="play">
+              <div class="img">
+                <img src="assets/images/icons/play.svg" alt="">
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-layout>

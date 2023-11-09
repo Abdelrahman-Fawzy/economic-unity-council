@@ -1,0 +1,67 @@
+.about-us, .target {
+  padding: 30px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .header {
+    h6 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #008043;
+    }
+    h2 {
+      font-size: 50px;
+      font-weight: 700;
+      color: #008043;
+    }
+  }
+  .body {
+    p {
+      font-size: 18px;
+      color: #484C52;
+      line-height: 180%;
+    }
+  }
+  .footer {
+    a {
+      span {
+        font-size: 16px;
+        color: #008043;
+      }
+    }
+  }
+}
+
+.details {
+  background: #FFF;
+  padding: 30px;
+  .img {
+    width: 75%;
+  }
+  .background {
+    position: absolute;
+    top: 3em;
+    left: 12em;
+    width: 35%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    li {
+      font-size: 18px;
+      line-height: 170%;
+      color: #484C52;
+    }
+  }
+  button.primary {
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+    color: #FFF;
+    background: #008043;
+    margin-top: 1em;
+  }
+}

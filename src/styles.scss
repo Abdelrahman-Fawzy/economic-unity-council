@@ -60,3 +60,32 @@ body {
 .p-carousel-items-container {
   align-items: center;
 }
+
+.dropdown-menu {
+  right: 0;
+  left: unset;
+}
+
+.rating {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  .p-rating {
+    span {
+      starfillicon {
+        svg {
+          g {
+            path {
+              fill: #EBB700
+            }
+          }
+        }
+      }
+    }
+  }
+  span {
+    font-weight: 700;
+    font-size: 18px;
+    color: #353535;
+  }
+}

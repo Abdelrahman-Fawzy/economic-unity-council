@@ -8,8 +8,7 @@ import { RegisterationModalComponent } from './registeration-modal/registeration
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GalleriaModule } from 'primeng/galleria';
 import { CarouselModule } from 'primeng/carousel';
-
-
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,7 +23,8 @@ import { CarouselModule } from 'primeng/carousel';
     FormsModule,
     ReactiveFormsModule,
     GalleriaModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule
   ],
   exports: [
     HeaderComponent,
@@ -35,7 +35,8 @@ import { CarouselModule } from 'primeng/carousel';
     FormsModule,
     GalleriaModule,
     CarouselModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class SharedModule { }

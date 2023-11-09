@@ -1,0 +1,113 @@
+.course-info {
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  span.dot {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: #2F9946;
+    border-radius: 50%;
+  }
+  .category {
+    border-radius: 5px;
+    background: var(--Green, #2F9946);
+    color: #fff;
+    padding: 5px 15px;
+    display: inline-block;
+  }
+  .course-name {
+    h3 {
+      font-weight: 700;
+      font-size: 25px;
+      color: #386BB4;
+    }
+  }
+  .information {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .img {
+          width: 30px;
+          height: 30px;
+        }
+        span {
+          font-size: 18px;
+          font-weight: 700;
+          color: #4B5768;
+        }
+      }
+    }
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    h5 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #353535;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #4B5768;
+      line-height: 29px;
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .tools {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+    }
+    .instructor {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        span.name {
+          font-size: 18px;
+          font-weight: 700;
+          color: #353535;
+        }
+        span.jobDesc {
+          font-size: 18px;
+          font-weight: 400;
+          color: #4B5768;
+        }
+      }
+      .img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+.video {
+  button.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: #FFF;
+    padding: 10px;
+    border: none;
+  }
+}
