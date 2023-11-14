@@ -1,88 +1,100 @@
-<nav class="navbar navbar-expand-xl navbar-light">
-<a class="navbar-brand" href="#">
-  <div class="logo flex flex-col ai-c">
-    <div class="img">
-      <img src="assets/images/main_assets/logo.svg" alt="">
-    </div>
-    <span>مركز التدريب و البحوث و الدراسات</span>
-    <span>Training, research and studies Center</span>
+<div class="small-nav">
+  <div class="english-data">
+    <ul class="list-unstyled">
+      <li>League of Arab States</li>
+      <li>Council of Arab Economic Unity</li>
+      <li>Training, Research and Studies Center</li>
+    </ul>
   </div>
-  <!-- <img src="assets/images/main_assets/logo.svg" alt="logo"> -->
-</a>
-
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse jc-sb" id="navbarSupportedContent">
-  <ul class="navbar-nav gap-15">
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="''" [routerLinkActive]="'routerActive'" [routerLinkActiveOptions]="{exact: true}">
-        الصفحة الرئيسية
-      </a>
-    </li>
-    <li class="nav-item dropdown" dropdown>
-      <a
-        dropdownToggle 
-        class="nav-link dropdown-toggle" 
-        id="dropdownMenuButton" 
-        data-mdb-toggle="dropdown" 
-        aria-expanded="false"
-        aria-controls="dropdown-animated">
-        <span (click)="toggleItem($event)">البرامج التدريبية</span>
-        <svg width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Medium/chevron-left">
-            <path id="Icon" d="M18.9321 9L12.9321 15L6.93213 9" stroke="#484C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-        </svg>          
-      </a>
-      <ul id="dropdown-animated" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
-        <li *ngFor="let category of categories">
-          <a class="dropdown-item" href="#">
-            {{category.name}}
-            <img src="assets/images/icons/black_arrow-left.svg" alt="" *ngIf="category.courses.length > 0">
-          </a>
-          <ul class="dropdown-menu dropdown-submenu" *ngIf="category.courses.length > 0">
-            <li *ngFor="let course of category.courses">
-              <a class="dropdown-item" [routerLink]="['/courses/course-details', course.id]">{{course.name}}</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link">
-        بروتوكولات تدريبية
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link">
-        خدمات المركز
-        <span class="caret"></span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="'/verify-certificate'" [routerLinkActive]="'routerActive'">
-        التحقق من الشهادات
-        <span class="caret"></span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link">
-        الاستشارات التدريبية
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="'/about-us'" [routerLinkActive]="'routerActive'">
-        من نحن
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link">
-        تواصل معنا
-      </a>
-    </li>
-  </ul>
+  <div class="logo">
+    <div class="logo flex flex-col ai-c">
+      <div class="img">
+        <img src="assets/images/main_assets/header_logo.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="arabic-data">
+    <ul class="list-unstyled">
+      <li>جامعة الدول العربية</li>
+      <li>مجلس الوحدة الاقتصادية العربية</li>
+      <li>مركز التدريب و البحوث و الدراسات</li>
+    </ul>
+  </div>
 </div>
+<nav class="navbar navbar-expand-xl navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse jc-c" id="navbarSupportedContent">
+    <ul class="navbar-nav gap-15">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="''" [routerLinkActive]="'routerActive'" [routerLinkActiveOptions]="{exact: true}">
+          الصفحة الرئيسية
+        </a>
+      </li>
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle 
+          class="nav-link dropdown-toggle" 
+          id="dropdownMenuButton" 
+          data-mdb-toggle="dropdown" 
+          aria-expanded="false"
+          aria-controls="dropdown-animated">
+          <span (click)="toggleItem($event)">البرامج التدريبية</span>
+          <svg width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Medium/chevron-left">
+              <path id="Icon" d="M18.9321 9L12.9321 15L6.93213 9" stroke="#484C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>          
+        </a>
+        <ul id="dropdown-animated" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+          <li *ngFor="let category of categories">
+            <a class="dropdown-item" href="#">
+              {{category.name}}
+              <img src="assets/images/icons/black_arrow-left.svg" alt="" *ngIf="category.courses.length > 0">
+            </a>
+            <ul class="dropdown-menu dropdown-submenu" *ngIf="category.courses.length > 0">
+              <li *ngFor="let course of category.courses">
+                <a class="dropdown-item" [routerLink]="['/courses/course-details', course.id]">{{course.name}}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          بروتوكولات تدريبية
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          خدمات المركز
+          <span class="caret"></span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/verify-certificate'" [routerLinkActive]="'routerActive'">
+          التحقق من الشهادات
+          <span class="caret"></span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          الاستشارات التدريبية
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/about-us'" [routerLinkActive]="'routerActive'">
+          من نحن
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          تواصل معنا
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>

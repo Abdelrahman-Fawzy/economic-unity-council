@@ -1,5 +1,14 @@
 @import '/src/assets/abstracts/variables';
 
+.small-nav {
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 1em 0;
+}
+
 nav.navbar {
   padding: 0.5rem 5rem;
   background: #fff;
